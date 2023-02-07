@@ -33,7 +33,7 @@ python-versions = "~=3.7"
 name = "certifi"
 version = "2022.12.7"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -41,7 +41,7 @@ python-versions = ">=3.6"
 name = "cffi"
 version = "1.15.1"
 description = "Foreign Function Interface for Python calling C code."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -52,7 +52,7 @@ pycparser = "*"
 name = "charset-normalizer"
 version = "3.0.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -79,7 +79,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7
 name = "contextvars"
 version = "2.4"
 description = "PEP 567 Backport"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -90,7 +90,7 @@ immutables = ">=0.9"
 name = "distro"
 version = "1.8.0"
 description = "Distro - an OS platform information API"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -134,7 +134,7 @@ tornado = ["tornado (>=0.2)"]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.5"
 
@@ -142,7 +142,7 @@ python-versions = ">=3.5"
 name = "immutables"
 version = "0.19"
 description = "Immutable Collections"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -204,7 +204,7 @@ i18n = ["Babel (>=2.7)"]
 name = "jmespath"
 version = "1.0.1"
 description = "JSON Matching Expressions"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -220,7 +220,7 @@ python-versions = ">=3.7"
 name = "msgpack"
 version = "1.0.4"
 description = "MessagePack serializer"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -264,7 +264,7 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest (>=7.2.1)", "pytes
 name = "psutil"
 version = "5.9.4"
 description = "Cross-platform lib for process and system monitoring in Python."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -275,7 +275,7 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 name = "pycparser"
 version = "2.21"
 description = "C parser in Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -283,7 +283,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "pycryptodomex"
 version = "3.17"
 description = "Cryptographic library for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -291,7 +291,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -299,7 +299,7 @@ python-versions = ">=3.6"
 name = "pyzmq"
 version = "25.0.0"
 description = "Python bindings for 0MQ"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -310,7 +310,7 @@ cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 name = "requests"
 version = "2.28.2"
 description = "Python HTTP for Humans."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7, <4"
 
@@ -328,7 +328,7 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 name = "salt"
 version = "3005.1"
 description = "Portable, distributed, remote execution and configuration management system"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.5"
 
@@ -347,7 +347,7 @@ requests = ">=1.0.0"
 
 [[package]]
 name = "setuptools"
-version = "67.1.0"
+version = "67.2.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
@@ -378,7 +378,7 @@ python-versions = ">=3.7"
 name = "urllib3"
 version = "1.26.14"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
@@ -416,7 +416,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "736aac3c53c9bf68e3898f8699256f3ad4941724b038ab99ad005ed4399a7487"
+content-hash = "8fd38d9780f65ccda1d2ded8d026a9fd89e396598849f0d4f0bb603083f6b4f8"
 
 [metadata.files]
 black = [
@@ -1006,8 +1006,8 @@ salt = [
     {file = "salt-3005.1.tar.gz", hash = "sha256:fa14c5d873f863b50950121d7e23a2449502745490c7c48c0cf045406cfe57c1"},
 ]
 setuptools = [
-    {file = "setuptools-67.1.0-py3-none-any.whl", hash = "sha256:a7687c12b444eaac951ea87a9627c4f904ac757e7abdc5aac32833234af90378"},
-    {file = "setuptools-67.1.0.tar.gz", hash = "sha256:e261cdf010c11a41cb5cb5f1bf3338a7433832029f559a6a7614bd42a967c300"},
+    {file = "setuptools-67.2.0-py3-none-any.whl", hash = "sha256:16ccf598aab3b506593c17378473978908a2734d7336755a8769b480906bec1c"},
+    {file = "setuptools-67.2.0.tar.gz", hash = "sha256:b440ee5f7e607bb8c9de15259dba2583dd41a38879a7abc1d43a71c59524da48"},
 ]
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
