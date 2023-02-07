@@ -1,0 +1,33 @@
+on:
+  push:
+    tags:
+      - v*.*.*
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: pipx install poetry
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .python-version
+          cache: poetry
+          cache-dependency-path: poetry.lock
+
+      - uses: taiki-e/install-action@just
+
+      - run: just install
+      - run: just build
+
+      - run: poetry publish -u __token__ -p ${{ secrets.PYPI_TOKEN }}
+
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            configs/*
+            dist/*

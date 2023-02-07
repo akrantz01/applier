@@ -1,0 +1,21 @@
+on: push
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: pipx install poetry
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: applier/.python-version
+          cache: poetry
+          cache-dependency-path: |
+            applier/poetry.lock
+
+      - uses: taiki-e/install-action@just
+
+      - run: just install
+      - run: just ci
