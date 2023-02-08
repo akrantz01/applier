@@ -32,6 +32,7 @@ def sync():
 
     _runner.cmd("fileserver.update")
     _runner.cmd("saltutil.sync_all")
+    _runner.cmd("git_pillar.update")
 
 
 def apply() -> bool:
