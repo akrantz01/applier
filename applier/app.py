@@ -1,5 +1,3 @@
-from os import environ
-
 from flask import Flask, jsonify, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -14,7 +12,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 @app.post("/webhook/apply")
 @webhook
 def apply():
-    if request.json.get("ref") != "refs/heads/{DEFAULT_BRANCH}":
+    if request.json.get("ref") != f"refs/heads/{DEFAULT_BRANCH}":
         return jsonify(message="not main branch, skipping")
 
     sync()
