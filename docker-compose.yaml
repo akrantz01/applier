@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  broker:
+    image: redis:7-alpine
+    networks:
+      - default
+
+networks:
+  default:

@@ -1,3 +1,5 @@
+set dotenv-load
+
 black := "poetry run black"
 isort := "poetry run isort --profile black --filter-files"
 
@@ -12,6 +14,14 @@ install:
 # Launch the development server
 dev:
   poetry run flask --app applier run
+
+# Launch a background task worker
+tasks:
+  poetry run dramatiq -p 1 -t 1 applier
+
+# Open a python shell
+shell:
+  poetry run ipython
 
 # Build the project
 build:

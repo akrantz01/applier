@@ -35,10 +35,9 @@ def sync():
     _runner.cmd("git_pillar.update")
 
 
-def apply() -> bool:
+def apply():
     """
     Apply the SaltStack highstate
     """
 
-    jid = _local.cmd_async("*", "state.apply")
-    return jid != 0
+    _local.cmd("*", "state.apply")
