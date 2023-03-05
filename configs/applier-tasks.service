@@ -1,0 +1,13 @@
+[Unit]
+Description=Process background jobs for applying highstate
+Requires=redis.service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/env dramatiq --processes 1 --threads 1 applier
+
+[Install]
+WantedBy=multi-user.target
